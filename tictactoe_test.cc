@@ -47,6 +47,7 @@ bool tttb_winner_horizontal_test() {
 int main() {
     bool result = true;
     result &= tttb_winner_vertical_test();
+    result &= tttb_winner_horizontal_test();
     if (result) {
         cout << "All tests passed." << endl;
         return(0);
