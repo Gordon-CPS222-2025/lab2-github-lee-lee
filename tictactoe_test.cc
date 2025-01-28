@@ -30,7 +30,10 @@ bool tttb_winner_horizontal_test() {
     b.set(0, 0, TictactoeXO::X);
     b.set(0, 1, TictactoeXO::X);
     if (TictactoeXO::X == b.winner()) {
+<<<<<<< HEAD
         cout << "tttb_winner_horizontal_test() failed for 2 in a row" << endl;
+=======
+>>>>>>> main
         return false;
     }
     b.set(0, 2, TictactoeXO::X);
@@ -40,6 +43,10 @@ bool tttb_winner_horizontal_test() {
     }
     return true;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 
 bool tttb_winner_diagonal_test() {
     TictactoeBoard b;
@@ -62,7 +69,10 @@ int main() {
     bool result = true;
     result &= tttb_winner_vertical_test();
     result &= tttb_winner_horizontal_test();
+<<<<<<< HEAD
     result &= tttb_winner_diagonal_test();
+=======
+>>>>>>> main
     if (result) {
         cout << "All tests passed." << endl;
         return(0);
